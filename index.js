@@ -101,4 +101,6 @@ app.use('/person',personRoutes)
 const menuRoutes = require('./routes/menuRoutes');
 app.use('/menu',menuRoutes);
 
+
+// This will run on the port no 500
 app.listen(500)
