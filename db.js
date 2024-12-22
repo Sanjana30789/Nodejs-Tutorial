@@ -1,8 +1,9 @@
 // Connect MongoDB with Nodejs
 const mongoose = require('mongoose');
-
+require('dotenv').config();
 // Define the mongobd url
-const mongourl = 'mongodb://localhost:27017/travels';
+// const mongourl = 'mongodb://localhost:27017/travels';
+const mongourl = process.env.MONGODB_URL;
 
 // Setup Connection 
 mongoose.connect(mongourl,{
